@@ -48,7 +48,7 @@ $tableContent = new DataProcess($tableDataArray);
 
 $tableContent
     ->addColumn('action', function ($addrow) {
-        return '<a href="/edit/' . $addrow['id'] . '">' . $addrow['name'] . '</a>';
+        return '<a href="/edit/' . $addrow['id'] . '">View</a>';
     })
     ->editColumn('address', function ($editRow) {
         return $editRow['address'] . ' ও ঠিকানা';
